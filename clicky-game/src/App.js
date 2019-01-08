@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Card from './components/Card/Card';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
+import characters from './characters.json';
 import './App.css';
 
 
@@ -23,12 +24,20 @@ import './App.css';
 
 
 class App extends Component {
+
+  imageClick = () => {
+    // alert("Card clicked!");
+    console.log(characters);
+  }
+
   render() {
     return (
       <div>
         <Navbar />
         <Jumbotron />
-        <Card />
+        <Card
+        imageClick={this.imageClick}
+        />
 
       </div>
     )

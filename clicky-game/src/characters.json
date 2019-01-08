@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image": "barnie.png",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "image": "bart.png",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "image": "flanders.png",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "image": "homer.png",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "image": "itchy.png",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "image": "krabappel.png",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "image": "krusty.png",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "lisa.png",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "image": "milhouse.png",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "image": "otto.png",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "image": "skinner.png",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "image": "wiggum.png",
+        "clicked": false
+    }
+]
