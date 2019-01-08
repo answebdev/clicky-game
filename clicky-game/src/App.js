@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 // import logo from './yin-yang.png';
+import Card from './components/Card/Card';
+import Navbar from './components/Navbar/Navbar';
+import Jumbotron from './components/Jumbotron/Jumbotron';
 import './App.css';
-import Navbar from './components/Navbar';
+
 
 // class App extends Component {
 //   render() {
@@ -24,9 +27,11 @@ class App extends Component {
     return (
       <div>
         <Navbar />
+        <Jumbotron />
+        <Card />
 
       </div>
-    );
+    )
   }
 }
 
