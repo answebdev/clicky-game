@@ -1,0 +1,32 @@
+body {
+    background-color: #f6c945;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background-color: #3e63bd!important;
+}
+
+.navbar-brand
+{
+    /* position: absolute; */
+    width: 100%;
+    left: 0;
+    /* text-align: center; */
+    margin:0 auto;
+    margin-left: 40px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+#instructions {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
+#score {
+    margin-right: 40px;
+}
