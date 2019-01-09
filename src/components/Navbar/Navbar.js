@@ -4,8 +4,8 @@ import "./Navbar.css";
 class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a className="navbar-brand" href="/">The Simpsons Clicky Game</a>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary"><img id="homer-logo" src="https://icon-icons.com/icons2/21/PNG/256/toons_homer_simpson_homersimpson_2381.png" alt="logo" />
+                <a className="navbar-brand" href="/" onClick={this.Reset}>The Simpsons Clicky Game</a>
                 {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button> */}

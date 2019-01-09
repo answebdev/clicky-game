@@ -36,7 +36,7 @@ class App extends Component {
     characters,
     currentScore: 0,
     topScore: 0,
-    rightWrong: "",
+    // rightWrong: "",
     clicked: [],
   };
 
@@ -57,13 +57,13 @@ class App extends Component {
     const newScore = this.state.currentScore + 1;
     this.setState({
       currentScore: newScore,
-      rightWrong: ""
+      // rightWrong: ""
     });
     if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore });
     }
     else if (newScore === 12) {
-      this.setState({ rightWrong: "Congratulations! You win!" });
+      // this.setState({ rightWrong: "Congratulations! You win!" });
       alert("Congratulations! You win!");
     }
     this.handleShuffle();
@@ -76,7 +76,7 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      rightWrong: "Oi!",
+      // rightWrong: "Oi!",
       clicked: []
     });
     this.handleShuffle();
@@ -88,11 +88,6 @@ class App extends Component {
     this.setState({ characters: shuffledCards });
   };
 
-  // handleClick = () => {
-  //   // alert("Card clicked!");
-  //   console.log(characters);
-  // }
-
   // Render the components
   render() {
     return (
@@ -100,7 +95,7 @@ class App extends Component {
         <Navbar
           currentScore={this.state.currentScore}
           topScore={this.state.topScore}
-          rightWrong={this.state.rightWrong}
+        // rightWrong={this.state.rightWrong}
         />
         <Jumbotron />
 

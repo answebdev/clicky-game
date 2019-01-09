@@ -7,8 +7,7 @@ body {
     background-color: #3e63bd!important;
 }
 
-.navbar-brand
-{
+.navbar-brand {
     /* position: absolute; */
     width: 75%;
     left: 0;
@@ -17,6 +16,13 @@ body {
     margin-left: 40px;
     font-size: 22px;
     letter-spacing: 0.5px;
+}
+
+#homer-logo {
+    width: 3%;
+    height: auto;
+    margin-bottom: 5px;
+    margin-right: -25px;
 }
 
 #instructions {
