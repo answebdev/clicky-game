@@ -15,7 +15,7 @@ class Navbar extends Component {
                             <span className="navbar-brand" id="instructions">Click on an image to begin!</span>
                         </li>
                         <li className="nav-item">
-                            <span className="navbar-brand" id="score">Score: 0 | Top Score: 0</span>
+                            <span className="navbar-brand" id="score">Score: {this.props.score}</span>
                         </li>
                     </ul>
                 </div>
