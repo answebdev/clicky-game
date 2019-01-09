@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './yin-yang.png';
 import Card from './components/Card/Card';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
@@ -22,7 +21,7 @@ import './App.css';
 //   }
 // }
 
-
+// Shuffle the cards
 function shuffleCards(array) {
   for (let i = array.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
@@ -32,7 +31,7 @@ function shuffleCards(array) {
 };
 
 class App extends Component {
-  // Set this.state
+  // Set the state
   state = {
     characters,
     currentScore: 0,
@@ -41,7 +40,10 @@ class App extends Component {
     clicked: [],
   };
 
+  // Set the click handler for when user clicks on the card
   clickHandler = id => {
+    let instructionsText = document.getElementById("instructions");
+    instructionsText.textContent = "";
     if (this.state.clicked.indexOf(id) === -1) {
       this.handleIncrement();
       this.setState({ clicked: this.state.clicked.concat(id) });
@@ -50,6 +52,7 @@ class App extends Component {
     }
   };
 
+  // Handle the increment that adds one each time a different card is clicked
   handleIncrement = () => {
     const newScore = this.state.currentScore + 1;
     this.setState({
@@ -61,11 +64,15 @@ class App extends Component {
     }
     else if (newScore === 12) {
       this.setState({ rightWrong: "Congratulations! You win!" });
+      alert("Congratulations! You win!");
     }
     this.handleShuffle();
   };
 
+  // Reset the score to 0
   Reset = () => {
+    let instructionsText = document.getElementById("instructions");
+    instructionsText.textContent = "D'oh! You lose.";
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
@@ -75,9 +82,10 @@ class App extends Component {
     this.handleShuffle();
   };
 
+  // Handle the shuffling of cards
   handleShuffle = () => {
     let shuffledCards = shuffleCards(characters);
-    this.setState({ friends: shuffledCards });
+    this.setState({ characters: shuffledCards });
   };
 
   // handleClick = () => {
@@ -85,14 +93,12 @@ class App extends Component {
   //   console.log(characters);
   // }
 
-
-
+  // Render the components
   render() {
     return (
       <div>
         <Navbar
-          // title="Simpsons Clicky Game"
-          score={this.state.currentScore}
+          currentScore={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
         />
@@ -109,8 +115,6 @@ class App extends Component {
             image={characters.image}
           />
         ))}
-
-
       </div>
     )
   }

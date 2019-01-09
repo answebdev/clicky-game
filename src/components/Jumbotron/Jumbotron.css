@@ -26,9 +26,22 @@ body {
   #jumbo-title {
       text-align: center;
       font-size: 70px;
+      font-weight: 700;
   }
 
   #jumbo-lead {
       text-align: center;
       font-size: 25px;
+      font-weight: 700;
   }
+
+  /* #inner-jumbo {
+      text-align: center;
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+      color: #000000;
+      opacity: 0.8;
+      margin-left: 0;
+      margin-right: 0;
+      height: auto;
+  } */
