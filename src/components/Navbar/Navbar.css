@@ -18,6 +18,10 @@ body {
     letter-spacing: 0.5px;
 }
 
+#simpsons-title {
+    font-weight: 700;
+}
+
 #homer-logo {
     width: 3%;
     height: auto;
