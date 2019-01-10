@@ -14,7 +14,7 @@ class Footer extends Component {
             // </footer>
             <footer className="footer">
                 <div className="container">
-                    <span id="footer-text">The Simpsons Clicky Game</span>
+                    <span id="footer-text">The Simpsons Clicky Game &nbsp;<i id="react" class="fab fa-react"></i></span>
                 </div>
             </footer>
 
