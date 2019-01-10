@@ -1,0 +1,11 @@
+.footer {
+    background: #3e63bd;
+    clear: both;
+    position: relative;
+    height: 50px;
+    /* margin-top: -40px; */
+}
+
+#footer-text {
+    color: #ffffff;
+}

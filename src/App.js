@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import Card from './components/Card/Card';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
-import Wrapper from './components/Wrapper/Wrapper';
-// import Rows from './components/Rows/Rows';
-// import Columns from './components/Columns/Columns';
+import Footer from './components/Footer/Footer';
 import characters from './characters.json';
 import './App.css';
 
@@ -94,7 +92,7 @@ class App extends Component {
   // Render the components
   render() {
     return (
-      <Wrapper>
+ 
       <div>
         <Navbar
           currentScore={this.state.currentScore}
@@ -102,10 +100,6 @@ class App extends Component {
         // rightWrong={this.state.rightWrong}
         />
         <Jumbotron />
-
-        {/* <Rows>
-
-          <Columns size="md-3"> */}
 
             {this.state.characters.map(characters => (
               <Card
@@ -118,11 +112,12 @@ class App extends Component {
                 image={characters.image}
               />
             ))}
-            
-          {/* </Columns>
-        </Rows> */}
+
+            <Footer />
+            {/* <br /> */}
+
       </div>
-      </Wrapper>
+
     )
   }
 }
