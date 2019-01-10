@@ -2,14 +2,18 @@
     background: #3e63bd;
     clear: both;
     position: relative;
-    height: 50px;
+    height: 100%;
+    padding: 10px;
     /* margin-top: -40px; */
 }
 
 #footer-text {
     color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
 #react {
-    font-size: 18px; 
+    font-size: 16px;
+    margin-top: 5px;
 }
