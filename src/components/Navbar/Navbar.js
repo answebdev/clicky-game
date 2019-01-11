@@ -4,9 +4,10 @@ import "./Navbar.css";
 
 class Navbar extends Component {
     render() {
+        console.log(this);
         return (
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary"><img id="homer-logo" src={homer} alt="Homer logo" />
-                <a className="navbar-brand" id="simpsons-title" href="/" onClick={this.Reset}>The Simpsons Clicky Game</a>
+                <a className="navbar-brand" id="simpsons-title" href="/" onClick={this.props.Reset}>The Simpsons Clicky Game</a>
                 {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button> */}
