@@ -1,7 +1,7 @@
 {
   "main.css": "/clicky-game/static/css/main.51449902.chunk.css",
-  "main.js": "/clicky-game/static/js/main.5d2a6bbc.chunk.js",
-  "main.js.map": "/clicky-game/static/js/main.5d2a6bbc.chunk.js.map",
+  "main.js": "/clicky-game/static/js/main.d69f7172.chunk.js",
+  "main.js.map": "/clicky-game/static/js/main.d69f7172.chunk.js.map",
   "static/js/1.4ad75668.chunk.js": "/clicky-game/static/js/1.4ad75668.chunk.js",
   "static/js/1.4ad75668.chunk.js.map": "/clicky-game/static/js/1.4ad75668.chunk.js.map",
   "runtime~main.js": "/clicky-game/static/js/runtime~main.6acb6692.js",
@@ -10,6 +10,6 @@
   "static/media/homer-logo.png": "/clicky-game/static/media/homer-logo.097b3d75.png",
   "static/media/Jumbotron.css": "/clicky-game/static/media/simpsons.5499922c.jpg",
   "index.html": "/clicky-game/index.html",
-  "precache-manifest.b5b7afc524e598714200ff9006676996.js": "/clicky-game/precache-manifest.b5b7afc524e598714200ff9006676996.js",
+  "precache-manifest.814b0dc0a89f90f86a414614df2f14fb.js": "/clicky-game/precache-manifest.814b0dc0a89f90f86a414614df2f14fb.js",
   "service-worker.js": "/clicky-game/service-worker.js"
 }
