@@ -6,22 +6,6 @@ import Footer from './components/Footer/Footer';
 import characters from './characters.json';
 import './App.css';
 
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <p>
-//             Clicky Game coming soon!
-//           </p>
-//         </header>
-//       </div>
-//     );
-//   }
-// }
-
 // Shuffle the cards
 function shuffleCards(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -71,7 +55,8 @@ class App extends Component {
   };
 
   // Reset the score to 0
-  Reset = () => {
+  Reset = (e) => {
+    e.preventDefault();
     let instructionsText = document.getElementById("instructions");
     instructionsText.textContent = "D'oh! You lose.";
     this.setState({
