@@ -67,6 +67,17 @@ class App extends Component {
     this.handleShuffle();
   };
 
+    // Reset by clicking Navbar title
+    NavReset = (e) => {
+      e.preventDefault();
+      this.setState({
+        currentScore: 0,
+        topScore: this.state.topScore,
+        clicked: []
+      });
+      this.handleShuffle();
+    };
+
   // Handle the shuffling of cards
   handleShuffle = () => {
     let shuffledCards = shuffleCards(characters);
@@ -79,7 +90,7 @@ class App extends Component {
  
       <div>
         <Navbar
-          Reset={this.Reset}
+          Reset={this.NavReset}
           currentScore={this.state.currentScore}
           topScore={this.state.topScore}
         // rightWrong={this.state.rightWrong}
