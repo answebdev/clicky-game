@@ -55,8 +55,7 @@ class App extends Component {
   };
 
   // Reset the score to 0
-  Reset = (e) => {
-    e.preventDefault();
+  Reset = () => {
     let instructionsText = document.getElementById("instructions");
     instructionsText.textContent = "D'oh! You lose.";
     this.setState({
