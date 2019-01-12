@@ -21,8 +21,6 @@ https://answebdev.github.io/clicky-game/
 
 # Screenshots
 
-![Screenshot 01](screenshots/trainScheduler_screenshot01.png "Train Scheduler")
+![Screenshot 01](screenshots/clickyGame-screenshot01.jpg "The Simpsons Clicky Game")
 
-![Screenshot 02](screenshots/trainScheduler_screenshot02.png "Submission Form")
-
-![Screenshot 03](screenshots/trainScheduler_demo.gif "Demo")
+![Screenshot 02](screenshots/trainScheduler_demo.gif "Demo")
