@@ -41,7 +41,7 @@ class App extends Component {
   handleIncrement = () => {
     const newScore = this.state.currentScore + 1;
     this.setState({
-      currentScore: newScore,
+      currentScore: newScore
       // rightWrong: ""
     });
     if (newScore >= this.state.topScore) {
@@ -49,6 +49,8 @@ class App extends Component {
     }
     else if (newScore === 12) {
       // this.setState({ rightWrong: "Woohoo! You win!" });
+      let instructionsText = document.getElementById("instructions");
+      instructionsText.textContent = "Woohoo! You win!";
       alert("Woohoo! You win!");
     }
     this.handleShuffle();
@@ -67,16 +69,16 @@ class App extends Component {
     this.handleShuffle();
   };
 
-    // Reset by clicking Navbar title
-    NavReset = (e) => {
-      e.preventDefault();
-      this.setState({
-        currentScore: 0,
-        topScore: this.state.topScore,
-        clicked: []
-      });
-      this.handleShuffle();
-    };
+  // Reset by clicking Navbar title
+  NavReset = (e) => {
+    e.preventDefault();
+    this.setState({
+      currentScore: 0,
+      topScore: this.state.topScore,
+      clicked: []
+    });
+    this.handleShuffle();
+  };
 
   // Handle the shuffling of cards
   handleShuffle = () => {
@@ -87,7 +89,7 @@ class App extends Component {
   // Render the components
   render() {
     return (
- 
+
       <div>
         <Navbar
           Reset={this.NavReset}
@@ -97,20 +99,20 @@ class App extends Component {
         />
         <Jumbotron />
 
-            {this.state.characters.map(characters => (
-              <Card
-                key={characters.id}
-                clickHandler={this.clickHandler}
-                handleIncrement={this.handleIncrement}
-                Reset={this.Reset}
-                handleShuffle={this.handleShuffle}
-                id={characters.id}
-                image={characters.image}
-              />
-            ))}
+        {this.state.characters.map(characters => (
+          <Card
+            key={characters.id}
+            clickHandler={this.clickHandler}
+            handleIncrement={this.handleIncrement}
+            Reset={this.Reset}
+            handleShuffle={this.handleShuffle}
+            id={characters.id}
+            image={characters.image}
+          />
+        ))}
 
-            <Footer />
-            {/* <br /> */}
+        <Footer />
+        {/* <br /> */}
 
       </div>
 

@@ -4,7 +4,6 @@ import "./Navbar.css";
 
 class Navbar extends Component {
     render() {
-        console.log(this);
         return (
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary"><img id="homer-logo" src={homer} alt="Homer logo" />
                 <a className="navbar-brand" id="simpsons-title" href="/clicky-game" onClick={this.props.NavReset}>The Simpsons Clicky Game</a>
