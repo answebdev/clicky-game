@@ -19,6 +19,6 @@ Please check out the live link for The Simpsons Clicky Game here:
 
 https://answebdev.github.io/clicky-game/
 
-# Screenshots
+# Screenshot
 
 ![Screenshot 01](screenshots/clickyGame-screenshot01.jpg "The Simpsons Clicky Game")
