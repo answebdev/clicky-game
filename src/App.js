@@ -21,7 +21,7 @@ class App extends Component {
     characters,
     currentScore: 0,
     topScore: 0,
-    // rightWrong: "",
+    message: "",
     clicked: [],
   };
 
@@ -41,29 +41,45 @@ class App extends Component {
   handleIncrement = () => {
     const newScore = this.state.currentScore + 1;
     this.setState({
-      currentScore: newScore
-      // rightWrong: ""
+      currentScore: newScore,
+      message: ""
     });
     if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore });
     }
-    else if (newScore === 12) {
-      // this.setState({ rightWrong: "Woohoo! You win!" });
-      let instructionsText = document.getElementById("instructions");
-      instructionsText.textContent = "Woohoo! You win!";
-      alert("Woohoo! You win!");
+    if (newScore === 12) {
+      this.setState({ message: "Woohoo! You win!" });
+      // let instructionsText = document.getElementById("instructions");
+      // instructionsText.textContent = "Woohoo! You win!";
+      // alert("Woohoo! You win!");
     }
     this.handleShuffle();
+
   };
+
+  // EndReset = () => {
+  //   this.setState({
+  //     currentScore: 0,
+  //     // topScore: this.state.topScore,
+  //     clicked: []
+  //   });
+  //   this.handleShuffle();
+  //   setTimeout(
+  //     () => {
+  //       // alert('Hello after 3 seconds');
+  //       this.clickHandler();
+  //     },
+  //     3 * 1000
+  //   );
 
   // Reset the score to 0
   Reset = () => {
-    let instructionsText = document.getElementById("instructions");
-    instructionsText.textContent = "D'oh! You lose.";
+    // let instructionsText = document.getElementById("instructions");
+    // instructionsText.textContent = "D'oh! You lose.";
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      // rightWrong: "Oi!",
+      message: "D'oh! You lose",
       clicked: []
     });
     this.handleShuffle();
@@ -95,7 +111,7 @@ class App extends Component {
           Reset={this.NavReset}
           currentScore={this.state.currentScore}
           topScore={this.state.topScore}
-        // rightWrong={this.state.rightWrong}
+          message={this.state.message}
         />
         <Jumbotron />
 

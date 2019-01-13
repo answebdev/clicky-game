@@ -13,7 +13,7 @@ class Navbar extends Component {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <span className="navbar-brand animated rubberBand" id="instructions">Click on an image to begin! {this.props.rightWrong}</span>
+                            <span className="navbar-brand animated rubberBand" id="instructions">Click on an image to begin!</span><span className="animated rubberBand" id="message">{this.props.message}</span>
                         </li>
                         <li className="nav-item">
                             <span className="navbar-brand" id="score">Score: {this.props.currentScore} | Top Score: {this.props.topScore}</span>

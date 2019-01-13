@@ -29,12 +29,22 @@ body {
     margin-right: -25px;
 }
 
-#instructions {
+#instructions,
+#message {
     position: absolute;
     width: 100%;
     left: 0;
     text-align: center;
     margin:0 auto;
+}
+
+#message {
+    color: #ffffff;
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #f6c945;
 }
 
 #currentScore {
