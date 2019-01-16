@@ -6,7 +6,7 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary"><img id="homer-logo" src={homer} alt="Homer logo" />
-                <a className="navbar-brand" id="simpsons-title" href="/clicky-game">Management Tool App</a>
+                <a className="navbar-brand" id="simpsons-title" href="/clicky-game">The Simpsons Clicky Game</a>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item">
