@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import Footer from './components/Footer/Footer';
 import characters from './characters.json';
+import swal from 'sweetalert';
 import './App.css';
 
 // Shuffle the cards
@@ -22,7 +23,7 @@ class App extends Component {
     currentScore: 0,
     topScore: 0,
     message: "",
-    clicked: [],
+    clicked: []
   };
 
   // Set the click handler for when user clicks on the card
@@ -48,13 +49,22 @@ class App extends Component {
       this.setState({ topScore: newScore });
     }
     if (newScore === 12) {
-      this.setState({ message: "Woohoo! You win!" });
+      this.setState({
+        currentScore: 0,
+        // message: "Woohoo, you win!",
+        clicked: []
+      }, function () {
+        this.setState({
+          clicked: []
+        })
+      });
       // let instructionsText = document.getElementById("instructions");
       // instructionsText.textContent = "Woohoo! You win!";
       // alert("Woohoo! You win!");
+      // window.confirm("Play again?");
+      swal("Woohoo!", "Good job! You win!");
     }
     this.handleShuffle();
-
   };
 
   // EndReset = () => {
@@ -79,9 +89,10 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      message: "D'oh! You lose",
+      // message: "D'oh! You lose",
       clicked: []
     });
+    swal("D'oh!", "Sorry, you lose.");
     this.handleShuffle();
   };
 
@@ -108,7 +119,7 @@ class App extends Component {
 
       <div>
         <Navbar
-          Reset={this.NavReset}
+          // Reset={this.NavReset}
           currentScore={this.state.currentScore}
           topScore={this.state.topScore}
           message={this.state.message}
@@ -119,8 +130,8 @@ class App extends Component {
           <Card
             key={characters.id}
             clickHandler={this.clickHandler}
-            handleIncrement={this.handleIncrement}
-            Reset={this.Reset}
+            // handleIncrement={this.handleIncrement}
+            // Reset={this.Reset}
             handleShuffle={this.handleShuffle}
             id={characters.id}
             image={characters.image}
@@ -128,7 +139,6 @@ class App extends Component {
         ))}
 
         <Footer />
-        {/* <br /> */}
 
       </div>
 
