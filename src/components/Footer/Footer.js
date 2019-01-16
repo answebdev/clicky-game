@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import homer from "../../img/homer-logo.png";
 import "./Footer.css";
 
 class Footer extends Component {

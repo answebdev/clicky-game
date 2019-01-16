@@ -5,23 +5,12 @@ body {
 .jumbotron {
     margin-bottom: 0px;
     background-image: url("../../img/simpsons.jpg");
-    /* opacity: 0.9; */
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 58px;
     border-radius: 0;
-
-    /* background-position:center; */
-    
-    /* background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center; */
     color:#ffffff;
-    /* text-shadow: black 0.3em 0.3em 0.3em; */
     text-shadow: rgb(56, 56, 56) 0.3em 0.3em 0.3em;
   }
 
@@ -38,14 +27,3 @@ body {
       font-weight: 700;
       letter-spacing: 0.5px;
   }
-
-  /* #inner-jumbo {
-      text-align: center;
-      border: 1px solid #ffffff;
-      background-color: #ffffff;
-      color: #000000;
-      opacity: 0.8;
-      margin-left: 0;
-      margin-right: 0;
-      height: auto;
-  } */

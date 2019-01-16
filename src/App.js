@@ -51,45 +51,22 @@ class App extends Component {
     if (newScore === 12) {
       this.setState({
         currentScore: 0,
-        // message: "Woohoo, you win!",
         clicked: []
       }, function () {
         this.setState({
           clicked: []
         })
       });
-      // let instructionsText = document.getElementById("instructions");
-      // instructionsText.textContent = "Woohoo! You win!";
-      // alert("Woohoo! You win!");
-      // window.confirm("Play again?");
       swal("Woohoo!", "Good job! You win!");
     }
     this.handleShuffle();
   };
 
-  // EndReset = () => {
-  //   this.setState({
-  //     currentScore: 0,
-  //     // topScore: this.state.topScore,
-  //     clicked: []
-  //   });
-  //   this.handleShuffle();
-  //   setTimeout(
-  //     () => {
-  //       // alert('Hello after 3 seconds');
-  //       this.clickHandler();
-  //     },
-  //     3 * 1000
-  //   );
-
   // Reset the score to 0
   Reset = () => {
-    // let instructionsText = document.getElementById("instructions");
-    // instructionsText.textContent = "D'oh! You lose.";
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      // message: "D'oh! You lose",
       clicked: []
     });
     swal("D'oh!", "Sorry, you lose.");
@@ -116,32 +93,24 @@ class App extends Component {
   // Render the components
   render() {
     return (
-
       <div>
         <Navbar
-          // Reset={this.NavReset}
           currentScore={this.state.currentScore}
           topScore={this.state.topScore}
           message={this.state.message}
         />
         <Jumbotron />
-
         {this.state.characters.map(characters => (
           <Card
             key={characters.id}
             clickHandler={this.clickHandler}
-            // handleIncrement={this.handleIncrement}
-            // Reset={this.Reset}
             handleShuffle={this.handleShuffle}
             id={characters.id}
             image={characters.image}
           />
         ))}
-
         <Footer />
-
       </div>
-
     )
   }
 }
