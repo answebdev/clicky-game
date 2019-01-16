@@ -8,10 +8,8 @@ body {
 }
 
 .navbar-brand {
-    /* position: absolute; */
     width: 75%;
     left: 0;
-    /* text-align: center; */
     margin:0 auto;
     margin-left: 40px;
     font-size: 22px;
