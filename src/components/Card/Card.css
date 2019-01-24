@@ -10,7 +10,10 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 38px;
+  margin-right: 38px;
+  margin-left: 38px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
   
 .card > .img-container {
@@ -32,4 +35,64 @@
   
 .card:active {
   transform: translate(1px, 1px);
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+	.card {
+    margin-right: 55px;
+    margin-left: 55px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+	.card {
+    margin-right: 72px;
+    margin-left: 72px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+  
+@media screen and (min-width: 641px) and (max-width: 768px) {
+	.card {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+	.card {
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+	.card {
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 320px) {
+	.card {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
