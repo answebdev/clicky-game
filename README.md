@@ -22,3 +22,5 @@ https://answebdev.github.io/clicky-game/
 # Screenshot
 
 ![Screenshot 01](screenshots/clickyGame-screenshot01.jpg "The Simpsons Clicky Game")
+
+![Screenshot 02](screenshots/simpsons-clicky-game-demo.gif "Demo")
