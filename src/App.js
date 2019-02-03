@@ -6,6 +6,9 @@ import Footer from './components/Footer/Footer';
 import characters from './characters.json';
 import swal from 'sweetalert';
 import './App.css';
+import ReactHowler from 'react-howler'
+import doh from "./sound/doh.mp3";
+import woohoo from "./sound/woohoo.mp3";
 
 // Shuffle the cards
 function shuffleCards(array) {
@@ -19,6 +22,8 @@ function shuffleCards(array) {
 class App extends Component {
   // Set the state
   state = {
+    sound1: false,
+    sound2: false,
     characters,
     currentScore: 0,
     topScore: 0,
@@ -32,11 +37,23 @@ class App extends Component {
     instructionsText.textContent = "";
     if (this.state.clicked.indexOf(id) === -1) {
       this.handleIncrement();
-      this.setState({ clicked: this.state.clicked.concat(id) });
+      this.handleSound2End();
+      this.setState({
+        clicked: this.state.clicked.concat(id),
+        sound1: false,
+        sound2: false
+      });
     } else {
       this.Reset();
     }
   };
+
+  // Function that prevents audio from getting cut off
+  handleSound2End = () => {
+    this.setState({
+      sound2: false
+    })
+  }
 
   // Handle the increment that adds one each time a different card is clicked
   handleIncrement = () => {
@@ -54,10 +71,15 @@ class App extends Component {
         clicked: []
       }, function () {
         this.setState({
-          clicked: []
+          clicked: [],
+          sound2: true
         })
       });
+      this.handleSound2End();
       swal("Woohoo!", "Good job! You win!");
+      // this.setState({
+      //   sound2: true
+      // });
     }
     this.handleShuffle();
   };
@@ -70,6 +92,9 @@ class App extends Component {
       clicked: []
     });
     swal("D'oh!", "Sorry, you lose.");
+    this.setState({
+      sound1: true
+    });
     this.handleShuffle();
   };
 
@@ -98,6 +123,15 @@ class App extends Component {
           currentScore={this.state.currentScore}
           topScore={this.state.topScore}
           message={this.state.message}
+        />
+        <ReactHowler
+          src={doh}
+          playing={this.state.sound1}
+        />
+        <ReactHowler
+          src={woohoo}
+          playing={this.state.sound2}
+          onEnd={this.handleSound2End}
         />
         <Jumbotron />
         {this.state.characters.map(characters => (
