@@ -10,6 +10,7 @@ This application uses React and Bootstrap. The font used ('Montserrat') comes fr
 
 * React
 * ES6
+* NPM packages: React-howler and SweetAlert
 * Bootstrap
 * CSS
 
