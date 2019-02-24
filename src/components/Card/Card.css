@@ -21,6 +21,7 @@
   height: 100%;
   overflow: hidden;
   background:#ffffff;
+  text-align: center;
 }
   
 .card > .img-container > img {

@@ -1,62 +1,62 @@
 [
     {
         "id": 1,
-        "image": "http://rs863.pbsrc.com/albums/ab198/a13xcoim/BarneyGumble.png~c200",
+        "image": "barnie.png",
         "clicked": false
     },
     {
         "id": 2,
-        "image": "http://pngimg.com/uploads/simpsons/simpsons_PNG9.png",
+        "image": "bart.png",
         "clicked": false
     },
     {
         "id": 3,
-        "image": "https://vignette.wikia.nocookie.net/simpsonsfanon/images/d/df/Maggie-Simpson-icon.png/revision/latest?cb=20180629182716",
+        "image": "maggie.png",
         "clicked": false
     },
     {
         "id": 4,
-        "image": "http://icons.iconarchive.com/icons/jonathan-rey/simpsons/256/Homer-Simpson-04-Happy-icon.png",
+        "image": "homer.png",
         "clicked": false
     },
     {
         "id": 5,
-        "image": "https://vignette.wikia.nocookie.net/cmrb/images/2/24/Itchy.png/revision/latest?cb=20141130193630",
+        "image": "itchy.png",
         "clicked": false
     },
     {
         "id": 6,
-        "image": "https://vignette.wikia.nocookie.net/lossimpson/images/5/5a/Edna_Krabappel_2.png/revision/latest?cb=20110628002950&path-prefix=es",
+        "image": "flanders.png",
         "clicked": false
     },
     {
         "id": 7,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQfz-38ZVNlJ7SFfLX_kevwGxMnKVgstqfLJWjU-aDW4aDDMV",
+        "image": "sideshow-bob.png",
         "clicked": false
     },
     {
         "id": 8,
-        "image": "https://lunarcamel.files.wordpress.com/2012/11/scared-lisa.gif",
+        "image": "lisa.png",
         "clicked": false
     },
     {
         "id": 9,
-        "image": "https://vignette.wikia.nocookie.net/simpsons/images/1/11/Milhouse_Van_Houten.png/revision/20090615084808",
+        "image": "milhouse.png",
         "clicked": false
     },
     {
         "id": 10,
-        "image": "https://vignette.wikia.nocookie.net/lossimpson/images/e/e3/Otto.gif/revision/latest?cb=20110508130501&path-prefix=es",
+        "image": "otto.png",
         "clicked": false
     },
     {
         "id": 11,
-        "image": "http://vignette1.wikia.nocookie.net/simpsonspediade2009/images/f/f6/500px-Seymour_Skinner.png/revision/latest?cb=20100106123814&path-prefix=es",
+        "image": "skinner.png",
         "clicked": false
     },
     {
         "id": 12,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvK-yYfLj4CLDxfePCZTy4kFDFSAHxZ1NJb9JSj3Do_eXgWQKq",
+        "image": "wiggum.png",
         "clicked": false
     }
 ]
